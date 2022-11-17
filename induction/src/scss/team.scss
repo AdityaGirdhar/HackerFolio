@@ -1,0 +1,81 @@
+@use 'base';
+
+.team {
+  @include base.container;
+  margin-top: 50px;
+
+  & p {
+    text-align: center;
+  }
+
+  & h1 {
+    @include base.heading;
+    margin-top: 100px;
+  }
+}
+
+.website-creators {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .creator-cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & div {
+      width: 220px;
+      height: 300px;
+      margin: 0 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      font-size: base.$font-size-p;
+
+      & img {
+        width: 100%;
+        height: 75%;
+        border-radius: 6px;
+        object-fit: cover;
+      }
+
+      & p {
+        margin: 4px 0;
+        font-weight: 700;
+      }
+
+      & span {
+        font-size: 0.9em;
+      }
+    }
+
+    @media screen and (max-width: 820px) {
+      flex-direction: column;;
+      justify-content: flex-start;
+      gap: 50px;
+    }
+  }
+}
+
+.line-break {
+  position: relative;
+  text-align: center;
+
+  &::after {
+    width: 75%;
+    position: absolute;
+    bottom: 0;
+    content: '';
+    border: 1px solid white;
+    border-radius: 6px;
+    height: 0;
+    padding: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+}

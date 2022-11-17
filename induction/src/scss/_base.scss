@@ -1,0 +1,38 @@
+$clr-bg: #000;
+$clr-font: #fff;
+$clr-grey: #181818;
+$font-text: 'Anek Odia';
+$font-heading: 'Amsterdam';
+$font-size-p: calc(0.85rem + 0.75vw);
+$font-size-h: calc(1.5rem + 2vw);
+
+@mixin container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: $font-size-p;
+    padding: 1em 10em;
+
+    @media screen and (max-width: 768px) {
+      padding: 1em 3em;
+    }
+}
+
+@mixin heading {
+    font-family: $font-heading;
+    font-size: $font-size-h;
+    font-weight: 400;
+}
+
+.blur {
+   filter: blur(8px);
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 28px;
+  }
+}

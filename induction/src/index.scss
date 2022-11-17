@@ -1,0 +1,21 @@
+@use './scss/base';
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: base.$clr-bg;
+  color: base.$clr-font;
+  font-family: base.$font-text;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: amsterdam;
+  src: url(assets/amsterdam.ttf);
+}

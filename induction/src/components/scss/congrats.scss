@@ -1,0 +1,349 @@
+@use 'sass:math';
+
+.congrats {
+  width: 50%;
+  align-self: flex-start;
+
+  & svg {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 820px) {
+    width: 100%;
+  }
+}
+
+// C o n g r a t u l  a  t  i  o  n  s
+// 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+
+$strokes: 500, 70, 100, 450, 100, 100, 200, 200, 500, 100, 200, 100, 100, 100, 200, 50, 50, 5;
+$duration: math.div(1, 18) * 5s;
+
+// this loop shit doesnt seem to be working so ive hardcoded it
+
+//@each $stroke in $strokes {
+  //$i: #{index($strokes, $stroke)};
+
+  //.hand-#{$i} {
+    //stroke-dasharray: $stroke;
+    //stroke-dashoffset: $stroke;
+    //animation: ani-hand-#{$i} $duration linear forwards;
+    //animation-delay: calc(($i - 1) * $duration);
+  //}
+
+  //@keyframes ani-hand-#{$i} {
+    //0% {
+      //stroke-dashoffset: $stroke;
+    //}
+
+    //100% {
+      //stroke-dashoffset: 0;
+    //}
+  //}
+//}
+
+.hand-1 {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: ani-hand-1 $duration linear forwards;
+    animation-delay: calc(0 * $duration);
+}
+
+@keyframes ani-hand-1 {
+  0% {
+    stroke-dashoffset: 500;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-2 {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: ani-hand-2 $duration linear forwards;
+    animation-delay: calc(1 * $duration);
+}
+
+@keyframes ani-hand-2 {
+  0% {
+    stroke-dashoffset: 100;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-3 {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: ani-hand-3 $duration linear forwards;
+    animation-delay: calc(2 * $duration);
+}
+
+@keyframes ani-hand-3 {
+  0% {
+    stroke-dashoffset: 100;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-4 {
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: ani-hand-4 $duration linear forwards;
+    animation-delay: calc(3 * $duration);
+}
+
+@keyframes ani-hand-4 {
+  0% {
+    stroke-dashoffset: 450;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-5 {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: ani-hand-5 $duration linear forwards;
+    animation-delay: calc(4 * $duration);
+}
+
+@keyframes ani-hand-5 {
+  0% {
+    stroke-dashoffset: 100;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-6 {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: ani-hand-6 $duration linear forwards;
+    animation-delay: calc(5 * $duration);
+}
+
+@keyframes ani-hand-6 {
+  0% {
+    stroke-dashoffset: 100;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-7 {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: ani-hand-7 $duration linear forwards;
+    animation-delay: calc(6 * $duration);
+}
+
+@keyframes ani-hand-7 {
+  0% {
+    stroke-dashoffset: 200;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-8 {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: ani-hand-8 $duration linear forwards;
+    animation-delay: calc(7 * $duration);
+}
+
+@keyframes ani-hand-8 {
+  0% {
+    stroke-dashoffset: 200;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-9 {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: ani-hand-9 $duration linear forwards;
+    animation-delay: calc(8 * $duration);
+}
+
+@keyframes ani-hand-9 {
+  0% {
+    stroke-dashoffset: 500;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-10 {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: ani-hand-10 $duration linear forwards;
+    animation-delay: calc(9 * $duration);
+}
+
+@keyframes ani-hand-10 {
+  0% {
+    stroke-dashoffset: 100;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-11 {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: ani-hand-11 $duration linear forwards;
+    animation-delay: calc(10 * $duration);
+}
+
+@keyframes ani-hand-11 {
+  0% {
+    stroke-dashoffset: 200;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-12 {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: ani-hand-12 $duration linear forwards;
+    animation-delay: calc(11 * $duration);
+}
+
+@keyframes ani-hand-12 {
+  0% {
+    stroke-dashoffset: 100;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-13 {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: ani-hand-13 $duration linear forwards;
+    animation-delay: calc(12 * $duration);
+}
+
+@keyframes ani-hand-13 {
+  0% {
+    stroke-dashoffset: 100;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-14 {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation: ani-hand-14 $duration linear forwards;
+    animation-delay: calc(13 * $duration);
+}
+
+@keyframes ani-hand-14 {
+  0% {
+    stroke-dashoffset: 150;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-15 {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: ani-hand-15 $duration linear forwards;
+    animation-delay: calc(14 * $duration);
+}
+
+@keyframes ani-hand-15 {
+  0% {
+    stroke-dashoffset: 200;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-16 {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: ani-hand-16 $duration linear forwards;
+    animation-delay: calc(15 * $duration);
+}
+
+@keyframes ani-hand-16 {
+  0% {
+    stroke-dashoffset: 50;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-17 {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: ani-hand-17 $duration linear forwards;
+    animation-delay: calc(16 * $duration);
+}
+
+@keyframes ani-hand-17 {
+  0% {
+    stroke-dashoffset: 50;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hand-18 {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: ani-hand-18 $duration linear forwards;
+    animation-delay: calc(17 * $duration);
+}
+
+@keyframes ani-hand-18 {
+  0% {
+    stroke-dashoffset: 10;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
