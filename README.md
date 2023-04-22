@@ -1,5 +1,3 @@
-# Untitled
-
 Jump to Instructions | Jump to Documentation
 
 ## 👩🏻‍💻 HackerFolio: The terminal template that’s cool
