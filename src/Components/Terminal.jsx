@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { templateData } from '../config';
 import windowButtons from '../Assets/buttons.svg'
 import toggle from '../Assets/toggle.svg'
 
@@ -22,7 +23,7 @@ export default function Terminal() {
                         <img src={windowButtons} alt="window buttons" className='window-buttons'/>
                         <img src={toggle} alt="toggle-key" />
                     </div>
-                    <div className='title-text'>girdhar@Adityas-Macbook-Pro:~</div>
+                    <div className='title-text'>{templateData['title-bar']}</div>
                 </div>
 
                 <div className="terminal-body">
