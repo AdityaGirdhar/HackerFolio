@@ -1,6 +1,6 @@
 Jump to Instructions | Jump to Documentation
 
-## 👩🏻‍💻 HackerFolio: The terminal template that’s cool
+# 👩🏻‍💻 HackerFolio: The terminal template that’s cool
 
 When I was choosing a template for my portfolio website, I found a lot of ‘terminal-style’ portfolio templates. As someone who spends the majority of his time in the terminal (neovim fan) I immediately liked the idea, but none of the templates I saw were, daresay, elegant.
 
