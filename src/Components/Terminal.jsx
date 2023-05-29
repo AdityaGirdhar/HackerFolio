@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { templateData } from '../config';
 import windowButtons from '../Assets/buttons.svg'
 import toggle from '../Assets/toggle.svg'
@@ -28,7 +28,7 @@ export default function Terminal() {
 
                 <div className="terminal-body">
                     <div className="greeting">
-                    Hello, world. This is my website. <br />
+                    Hello, world. This is HackerFolio. <br />
                     Last login: {dateTime} on console <br /> <br />
                     Type <strong>`help`</strong> for a full list of supported commands. <br />
                     This is an open source project. Type <strong>`source`</strong> to view my GitHub repository. <br /> <br />
